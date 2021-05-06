@@ -29,9 +29,12 @@ if __name__ == '__main__':
     init_water = time()
     init_eyes = time()
     init_exercise = time()
-    water_sec = 10
-    eyes_sec = 20
-    exercise_sec = 30
+#     We should drink water every 40 minutes
+    water_sec = 60*40
+#     Eyes should be given rest every 30 minutes
+    eyes_sec = 60*30
+#     Exercise should be done every 2 Hours
+    exercise_sec = 60*60*2 
     while True:
         if time() - init_water > water_sec:
             print("Kindly Drink some water in order to be Hydrated\n"
